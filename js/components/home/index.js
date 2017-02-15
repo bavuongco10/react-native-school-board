@@ -17,9 +17,9 @@ const Home = () => (
       <Tabs />
     </View>
 
-    <Footer>
+    <View>
       <MyFooter/>
-    </Footer>
+    </View>
 
   </Container>
 );

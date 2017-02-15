@@ -38,7 +38,6 @@ export default StyleSheet.create ({
     top: 500,
     left: 30,
     position: 'absolute',
-    borderRadius: 4,
   },
 
   linearGradient: {

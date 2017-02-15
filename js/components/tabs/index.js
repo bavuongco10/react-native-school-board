@@ -9,13 +9,13 @@ import {
 
 export default () => (
   <ScrollableTabView
-    renderTabBar={()=><CustomTabBar/>}
+    renderTabBar={()=><CustomTabBar backgroundColor="#ef2525"/>}
   >
-    <ScrollView tabLabel="Now Playing">
+    <ScrollView tabLabel="NOW PLAYING">
       <ImageSwiper/>
     </ScrollView>
 
-    <ScrollView tabLabel="Coming Soon">
+    <ScrollView tabLabel="COMING SOON">
       <TabTwo />
     </ScrollView>
 

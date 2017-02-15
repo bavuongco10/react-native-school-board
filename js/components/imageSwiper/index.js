@@ -15,7 +15,10 @@ import {
   onSwiperScrollEnd,
   itemsIsLoading,
 } from '../../actions/imageSwiper';
-import { Button } from 'native-base';
+import {
+  Button,
+  Icon,
+} from 'native-base';
 import {
   getImageUri,
 } from '../../helpers/function';
@@ -39,7 +42,7 @@ const ImageSwiper = ({onSwiperScrollEnd, items, currentSwiperIndex, isLoading}) 
       loadMinimalSize={1}
       style={styles.wrapper}
       loop={false}
-      height={570}
+      height={560}
       showsPagination={false}
       onMomentumScrollEnd = {onSwiperScrollEnd}
     >{
@@ -53,8 +56,9 @@ const ImageSwiper = ({onSwiperScrollEnd, items, currentSwiperIndex, isLoading}) 
         )
       }
     </Swiper>
-    <Button bordered info style={styles.scoreButton}>
-      <Text>
+    <Button success bordered style={styles.scoreButton}>
+      <Icon name="md-star" size={16} color="#F5B642" />
+      <Text style={{color: 'white', fontWeight: 'bold', }}>
         { items.length !== 0 ? items[currentSwiperIndex].vote_average : null}
       </Text>
     </Button>
